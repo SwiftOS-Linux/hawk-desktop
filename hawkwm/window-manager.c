@@ -44,7 +44,7 @@ void manageWindow(Window window, const char *title) {
     Window xwinid = (Window)winidlong;
     
     // Create main container
-    GtkWidget *plug = gtk_plug_new((Window)window); // Bug Detected Here
+    GtkWidget *plug = gtk_plug_new((Window)window);
     if (!plug) return;
     
     GtkWidget *panel = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
